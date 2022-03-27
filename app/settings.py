@@ -7,5 +7,5 @@ load_dotenv()
 HTTP_PORT = getenv('HTTP_PORT', None)
 HTTP_DOMAIN = getenv('HTTP_DOMAIN', None)
 HTTP_SCHEME = getenv('HTTP_SCHEME', None)
-FLASK_DEBUG = getenv('FLASK_DEBUG', None)
+FLASK_DEBUG = getenv('FLASK_DEBUG', "False").lower() in ['1', 'true', True]
 SECRET_VALUE = getenv('SECRET_VALUE', None)
