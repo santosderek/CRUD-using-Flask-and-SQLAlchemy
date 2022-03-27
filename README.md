@@ -15,5 +15,11 @@ pip3 install -r requirements.txt
 python3 ./run.py
 ```
 
+or for gunicorn:
+
+```
+./gunicorn.sh
+```
+
 
 > Later I will make a makefile and all that but I'm out of time right now
