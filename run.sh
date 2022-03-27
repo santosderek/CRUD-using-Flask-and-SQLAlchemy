@@ -1,0 +1,1 @@
+gunicorn -w 4 -b :8080 "run:application"

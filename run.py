@@ -8,7 +8,14 @@ application = create_application_factory()
 
 
 def run(*args, **kwargs):
-    application.run(*args, port=HTTP_PORT, host=HTTP_DOMAIN, debug=FLASK_DEBUG, **kwargs)
+    run_config = {
+        "port": HTTP_PORT,
+        "host": HTTP_DOMAIN,
+        "debug": FLASK_DEBUG, 
+        **kwargs
+    }
+    application.run(**run_config)
+
 
 if __name__ == '__main__':
     run()
