@@ -1,1 +1,1 @@
-gunicorn -w 4 -b 0.0.0.0:8080 "run:application"
+gunicorn -w 4 -b localhost:5000 "run:application"
